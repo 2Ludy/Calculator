@@ -6,4 +6,5 @@ public interface ICalcService {
     public NumberDTO mul(NumberDTO number);
 
     public NumberDTO div(NumberDTO number);
+    
 }
