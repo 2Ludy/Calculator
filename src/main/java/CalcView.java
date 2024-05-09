@@ -27,11 +27,19 @@ public class CalcView {
                 System.out.printf("mul의 결과는 %.2f 입니다.\n", number.getResult());
                 break;
             case "/":
-                System.out.printf("div의 결과는 %.2f 입니다.\n", number.getResult());
-                break;
+                if (number.getNum2()==0) {
+                    break;
+                } else {
+                    System.out.printf("div의 결과는 %.2f 입니다.\n", number.getResult());
+                    break;
+                }
             case "%":
-                System.out.printf("rem의 결과는 %.2f 입니다.\n", number.getResult());
-                break;
+                if (number.getNum2()==0) {
+                    break;
+                } else {
+                    System.out.printf("rem의 결과는 %.2f 입니다.\n", number.getResult());
+                    break;
+                }
             case "^":
                 System.out.printf("squ의 결과는 %.2f 입니다.\n", number.getResult());
                 break;
