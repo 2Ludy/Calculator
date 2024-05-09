@@ -27,8 +27,14 @@ public class CalcController {
                 case "/" :
                     number = service.div(number);
                     break;
+                case "%" :
+                    number = service.rem(number);
+                    break;
+                case "^" :
+                    number = service.squ(number);
+                    break;
                 default:
-                    System.out.println("올바른 연산자를 입력하여 주세요(+, -, *, /)");
+                    System.out.println("올바른 연산자를 입력하여 주세요(+, -, *, /, %, ^)");
                     continue;
             }
             view.printResult(number, op);

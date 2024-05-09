@@ -27,4 +27,20 @@ public class CalcServiceBiz implements ICalcService {
         number.setResult(result);
         return number;
     }
+
+    @Override
+    public NumberDTO rem(NumberDTO number) {
+        double result = number.getNum1() % number.getNum2();
+        number.setResult(result);
+        return number;
+    }
+
+    @Override
+    public NumberDTO squ(NumberDTO number) {
+        double result = Math.pow(number.getNum1(), number.getNum2());
+        number.setResult(result);
+        return number;
+    }
+
+
 }
